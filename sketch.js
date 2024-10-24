@@ -8,13 +8,13 @@ function setup() {
   createSpan("Sua idade:");
   campoIdade = createInput("5");
   campoFantasia = createCheckbox("Gosta de fantasia?");
-  campoTerror = createCheckbox("Gosta de Terror?");
+  campoTerror = createCheckbox("Gosta de A?");
 }
 
 function draw() {
   background("white");
   let idade = campoIdade.value();
-  let gostaDeTerror = campoTerror.checked();
+  let gostaDeFantasia = campoFantasia.checked();
   let gostaDeAventura = campoAventura.checked();
   let recomendacao = geraRecomendacao(idade, gostaDeTerror, gostaDeAventura);
 
