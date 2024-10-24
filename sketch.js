@@ -1,6 +1,6 @@
  let campoIdade;
 let campoFantasia;
-let campoTerror;
+let campoAvemtura;
 
 function setup() {
   createCanvas(800, 400);
@@ -8,17 +8,17 @@ function setup() {
   createSpan("Sua idade:");
   campoIdade = createInput("5");
   campoFantasia = createCheckbox("Gosta de fantasia?");
-  campoTerror = createCheckbox("Gosta de A?");
+  campoAventura= createCheckbox("Gosta de Aventura?");
 }
 
 function draw() {
-  background("white");
+  background("#8BC34A");
   let idade = campoIdade.value();
   let gostaDeFantasia = campoFantasia.checked();
   let gostaDeAventura = campoAventura.checked();
-  let recomendacao = geraRecomendacao(idade, gostaDeTerror, gostaDeAventura);
+  let recomendacao = geraRecomendacao(idade, gostaDeAventura, gostaDeAventura);
 
-  fill(color(76, 0, 115));
+  fill(color(16,18,60))
   textAlign(CENTER, CENTER);
   textSize(38);
   text(recomendacao, width / 2, height / 2);
